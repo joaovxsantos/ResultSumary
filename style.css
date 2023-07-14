@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Sono", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 :root {
@@ -37,7 +37,7 @@ body {
 }
 
 .container .result h1 {
-  font-size: 20px;
+  font-size: 22px;
   opacity: 0.8;
   margin-top: var(--spacing);
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .value ~ div p {
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0.7;
   width: 230px;
   line-height: 20px;
@@ -63,7 +63,7 @@ body {
   background: linear-gradient(
     0deg,
     hsla(241, 72%, 46%, 0) 0%,
-    hsla(256, 72%, 46%)
+    hsla(256, 72%, 46%, 1)
   );
   border-radius: 50%;
   width: 140px;
@@ -161,4 +161,18 @@ body {
 
 .summary button:hover {
   background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 6%));
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .result {
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+  }
+  .container .summary {
+    width: 100%;
+  }
 }
